@@ -1,0 +1,12 @@
+fieldset {
+    border: none;      
+} 
+small {
+    display: flex; 
+    margin-top: .25rem;
+    font-size: var(--fs-sm); 
+    line-height: 140%;
+}
+label {  
+    font-size: var(--fs-sm);  
+}  

@@ -1,0 +1,49 @@
+.disabled {
+    & label {
+        color: #8f8881bb;
+    }
+    & input:disabled {  
+        background-color: var(--surface-disabled);    
+    }
+    & input:disabled::placeholder {
+       color: var(--text-tertiary);
+    }
+}
+.error {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+    animation: error-shake 0.5s ease;
+    position: relative;
+    left: var(--left, 0);
+    & small { 
+        display: inline;
+        color: var(--semantic-error);
+    } 
+}
+[type="email"]:valid + .error {
+    display: none;
+}
+[type="text"]:valid + .error {
+   display: none;
+} 
+@keyframes error-shake {
+    0% {
+        --left: -.62rem;
+    }
+    20% {
+        --left: .5rem;
+    }
+    40% {
+        --left: -.37rem;
+    }
+    60% {
+        --left: .25rem;
+    }
+    80% {
+        --left: -2px;
+    }
+    100% {
+        --left: 0;
+    }
+} 

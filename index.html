@@ -20,6 +20,48 @@
             <h1>Formulário de matrícula</h1>
             <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p> 
         </header>  
+        <form method="post" enctype="multipart/form-data">
+            <fieldset class="child-info p py-lg"> 
+                <div>
+                    <legend>
+                        <h2>Informações da criança</h2>
+                    </legend>
+                </div>
+                <div>
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome completo</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="Qual o nome da criança?" pattern="[a-zA-Z\s]+">  
+                        <span class="error">
+                            <img src="./assets/icons/circle-error.svg" alt="ícone círculo de mensagem de erro">
+                            <small>Error message</small>
+                        </span>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="birth">Data de nascimento</label>
+                        <input id="birth" name="birth" type="date">
+                    </div>
+                    <div class="select-wrapper"> 
+                        <label for="gender">Sexo</label>
+                        <select name="gender" id="gender"> 
+                            <option value="woman">Feminino</option>
+                            <option value="man">Masculino</option>
+                            <option value="na">Prefiro não responder</option>
+                        </select>
+                    </div>
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea id="medical-info" name="medical-info" placeholder="Ela tem alergia a glúten"></textarea>
+                    </div>
+                    <div class="file-wrapper"> 
+                            <label for="birth-file">Certidão de nascimento</label>
+                        <div class="file-inner" tabindex="0">  
+                            <input type="file" id="birth-file"  name="birth-file">
+                            <span>Clique aqui para selecionar arquivos</span>  
+                        </div>
+                    </div> 
+                </div>
+            </fieldset>  
+        </form>
     </div>
 </body>
 </html>
