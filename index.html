@@ -88,6 +88,34 @@
                     <input id="state" name="state" type="text" placeholder="SP" disabled>
                 </div> 
             </fieldset>
+            <fieldset class="info-responsible p py-lg"> 
+                <div>
+                    <legend>
+                        <h2>Informações do responsável</h2>
+                    </legend>
+                </div>
+                <div class="input-wrapper"> 
+                    <label for="name">Nome do responsável</label>
+                    <input id="name" name="name" type="text" placeholder="Miguel Roberto Alves" pattern="[a-zA-Z\s]+"> 
+                    <span class="error">
+                        <img src="./assets/icons/circle-error.svg" alt="ícone círculo de mensagem de erro">
+                        <small>Error message</small>
+                    </span>
+                    <small>Principal responsável legal e contato de emergência</small> 
+                </div>
+                <div class="input-wrapper">
+                    <label for="tel">Telefone </label>
+                    <input id="tel" name="tel" type="tel" placeholder="(10) 9 8765-4321">
+                </div>
+                <div class="input-wrapper">
+                    <label for="mail">E-mail</label>
+                    <input id="mail" name="mail" type="email" placeholder="papailegal123">
+                    <span class="error">
+                        <img src="./assets/icons/circle-error.svg" alt="ícone círculo de mensagem de erro">
+                        <small>Insira um e-mail válido</small>
+                    </span> 
+                </div>  
+            </fieldset>
         </form>
     </div>
 </body>
