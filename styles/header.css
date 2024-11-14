@@ -1,0 +1,25 @@
+.container { 
+    background-color: var(--surface-secondary);  
+    text-align: center;  
+    display: flex; 
+    flex-direction: column; 
+    & img:nth-child(1) {  
+       padding-top: 1.5rem; 
+       min-width: 12.68rem;
+       margin: auto;
+    }
+    & img:nth-child(2) {
+       margin-block: 1.12rem;
+    }
+ }
+ header { 
+    margin-top: 1.5rem;
+    & a:nth-child(1) { 
+       background: url(../assets/icons/arrow-left.svg) no-repeat;
+       padding-inline: 1.93rem; 
+    }
+    & h1 { 
+       margin-block: 1.5rem .5rem;
+       font-size: var(--fs-lg);
+    } 
+ }
