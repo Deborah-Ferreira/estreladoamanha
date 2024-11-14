@@ -1,0 +1,33 @@
+.py-lg {
+    padding-block: var(--py-lg);
+}
+.py-md {
+    padding-top : var(--py-md);
+}
+.py-sm {
+    padding-block: var(--py-sm);
+}
+.p {
+    padding-inline: 1.5rem;
+} 
+.bottom {
+    padding-bottom: 1.25rem;
+} 
+.top {
+    margin-top: 1.5rem;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.margin-y {
+    margin-block: 1.25rem;
+}  
+.even-columns {
+    display: grid; 
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+} 
+.flex {
+    display: flex;
+}
